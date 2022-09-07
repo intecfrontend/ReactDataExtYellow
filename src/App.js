@@ -2,6 +2,7 @@
 import { uuid } from "uuidv4";
 import "./App.css";
 import { Daata, About } from "./data";
+import Button from "./Button";
 // https://www.youtube.com/watch?v=5llXA0RTYIU&t=591s
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
       ))}
       {About.map((AboutItem) => (
         <div className="AppItem">
-          <h1>{AboutItem.title}</h1>
+          <Button content={AboutItem.title}></Button>
         </div>
       ))}
     </div>
